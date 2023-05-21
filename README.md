@@ -1,31 +1,27 @@
-# Svelte Typescript Chrome Extension Boilerplate
+# Pixel Guardian
 
-> Boilerplate for Chrome Extension Svelte Typescript project
+> A chrome extension that blocks NSFW images and reels from any website
 
 ## Features
 
--   [Svelte](https://svelte.dev/)
--   [TypeScript](https://www.typescriptlang.org/)
--   [Vite](https://vitejs.dev/)
--   [CRXJS Vite Plugin](https://github.com/crxjs/chrome-extension-tools/blob/main/packages/vite-plugin/README.md)
--   [Chrome Extensions Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/)
-
+-   Blocks NSFW images from any website
+-   Hides reels
 ## Development
 
 ```bash
 # install dependencies
-npm i
+yarn install
 
 # build files to `/dist` directory
 # HMR for extension pages and content scripts
-npm run dev
+yarn run dev
 ```
 
 ## Build
 
 ```bash
 # build files to `/dist` directory
-$ npm run build
+$ yarn run build
 ```
 
 ## Load unpacked extensions
@@ -35,5 +31,3 @@ $ npm run build
 1. Open the Extension Management page by navigating to `chrome://extensions`.
 2. Enable Developer Mode by clicking the toggle switch next to `Developer mode`.
 3. Click the `LOAD UNPACKED` button and select the `/dist` directory.
-
-![Example](https://wd.imgix.net/image/BhuKGJaIeLNPW9ehns59NfwqKxF2/vOu7iPbaapkALed96rzN.png?auto=format&w=571)
