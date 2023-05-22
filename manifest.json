@@ -38,14 +38,22 @@
     "declarativeNetRequest",
     "declarativeNetRequestFeedback",
     "scripting",
-    "activeTab"
+    "activeTab",
+    "contextMenus"
   ],
   "host_permissions": ["<all_urls>", "http://*/*", "https://*/*"],
-  "declarative_net_request": {
-    "rule_resources" : [{
-        "id": "1",
-        "enabled": true,
-        "path": "rule.json"
-      }]
+  "commands": {
+    "censor-images": {
+      "suggested_key": {
+        "default": "Alt+W"
+      },
+      "description": "__MSG_censor_images__"
+    },
+    "uncensor-images": {
+      "suggested_key": {
+        "default": "Alt+Q"
+      },
+      "description": "__MSG_uncensor_images__"
+    }
   }
 }
